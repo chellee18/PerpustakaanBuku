@@ -121,6 +121,39 @@ Folder vendor tidak disertakan dalam repository GitHub karena ukuran file yang b
 - Perhitungan otomatis tanggal kembali
 - Penampilan status peminjaman berdasarkan tanggal
 
+**Alur**
+1. Alur Penggunaan Aplikasi
+- Pengguna membuka aplikasi dan masuk ke halaman utama.
+- Petugas dapat memilih menu Buku untuk mengelola data buku.
+- Petugas dapat memilih menu Member untuk mengelola data anggota perpustakaan.
+- Petugas dapat memilih menu Peminjaman untuk mencatat transaksi peminjaman buku.
+
+  - Setiap menu memiliki:
+    1. Halaman list untuk menampilkan data.
+    2. Halaman create untuk menambahkan data baru.
+  - Navigasi antar halaman dilakukan melalui:
+    1. Menu navbar.
+    2. Tombol Tambah pada masing-masing halaman.
+
+2. Alur Proses Peminjaman Buku
+- Petugas menekan tombol Tambah pada halaman Data Peminjaman.
+- Sistem menampilkan form peminjaman.
+- Petugas memilih member yang melakukan peminjaman.
+- Petugas memilih satu atau lebih buku yang akan dipinjam.
+- Sistem mengecek stok buku: Jika stok masih tersedia, buku dapat dipilih & Jika stok sudah habis, buku tidak dapat dipilih.
+- Petugas menekan tombol Simpan.
+
+Setelah data disimpan, sistem akan:
+
+- Menyimpan data ke tabel peminjaman.
+- Menyimpan detail buku ke tabel detail_peminjaman.
+- Mengurangi stok pada tabel buku sesuai jumlah buku yang dipinjam.
+- Menentukan tanggal kembali otomatis (7 hari setelah tanggal pinjam).
+
+Pada halaman Data Peminjaman:
+- Status peminjaman akan ditampilkan sebagai:
+  Sedang Dipinjam & Overdue (jika lewat dari tanggal kembali)
+
 **Penerapan Konsep OOP**
 - Inheritance
 Semua controller mewarisi class dasar Controller Laravel.
