@@ -10,9 +10,11 @@ Project ini merupakan web berbasis Laravel yang digunakan untuk mengelola data b
 - Arsitektur: MVC (Model View Controller)
 
 **Struktur Project (Garis Besar)**
+
 Struktur folder utama disusun berdasarkan tanggung jawab tiap komponen aplikasi.
 
 app/Models
+
 Berisi representasi tabel database dan relasi antar tabel.
 
 Model yang digunakan:
@@ -28,6 +30,7 @@ Relasi utama:
 - DetailPeminjaman berelasi dengan Buku
 
 app/Http/Controllers
+
 Berisi logic aplikasi dan penghubung antara model dan view.
 
 Controller yang digunakan:
@@ -37,6 +40,7 @@ Controller yang digunakan:
 - LoginController untuk autentikasi user
 
 resources/views
+
 Berisi tampilan antarmuka menggunakan Blade Template.
 
 File utama:
@@ -49,6 +53,7 @@ File utama:
 Tampilan menggunakan conditional rendering berdasarkan variabel mode, misalnya mode list dan mode create.
 
 routes/web.php
+
 Berisi routing aplikasi yang menghubungkan URL ke controller.
 
 Contoh route:
