@@ -54,13 +54,14 @@ routes/web.php,
 Berisi routing aplikasi yang menghubungkan URL ke controller.
 
 Contoh route:
-/buku
-/buku/create
-/member
-/member/create
-/peminjaman
-/peminjaman/create
-/katalog
+
+- /buku
+- /buku/create
+- /member
+- /member/create
+- /peminjaman
+- /peminjaman/create
+- /katalog
 
 Struktur Database dan Relasi
 
