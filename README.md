@@ -1,4 +1,4 @@
-# Sistem Informasi Peminjaman Buku Perpustakaan Berbasis Web (Laravel)
+# Web Peminjaman Buku Perpustakaan (Laravel)
 
 Project ini merupakan aplikasi web berbasis Laravel yang digunakan untuk mengelola data buku, data member, serta transaksi peminjaman buku pada perpustakaan. Sistem dikembangkan menggunakan arsitektur MVC (Model–View–Controller) dan database MySQL.
 
@@ -129,3 +129,19 @@ Beberapa controller memiliki method dengan nama yang sama seperti index(), creat
 
 - Overloading
 PHP tidak mendukung method overloading berdasarkan perbedaan parameter, sehingga konsep overloading tidak digunakan dalam project ini.
+
+**Skenario Pengujian dan Hasil**
+- Menambah buku
+  Hasil: Data buku tersimpan dan tampil di katalog.
+- Menambah member
+  Hasil: Data member tersimpan dan tampil di daftar member.
+- Menambah peminjaman buku
+  Hasil: Data peminjaman tersimpan dan stok buku berkurang.
+- Meminjam lebih dari satu buku
+  Hasil: Semua buku tercatat pada detail peminjaman.
+- Stok buku habis (0)
+  Hasil: Buku tidak bisa dipilih untuk dipinjam.
+- Cek status keterlambatan
+  Hasil: Status berubah menjadi overdue jika lewat tanggal kembali.
+- Validasi input kosong
+  Hasil: Data tidak bisa disimpan jika form belum lengkap.
