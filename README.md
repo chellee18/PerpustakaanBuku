@@ -131,17 +131,17 @@ Beberapa controller memiliki method dengan nama yang sama seperti index(), creat
 PHP tidak mendukung method overloading berdasarkan perbedaan parameter, sehingga konsep overloading tidak digunakan dalam project ini.
 
 **Skenario Pengujian dan Hasil**
-- Menambah buku
+- Menambah buku,
   Hasil: Data buku tersimpan dan tampil di katalog.
-- Menambah member
+- Menambah member,
   Hasil: Data member tersimpan dan tampil di daftar member.
-- Menambah peminjaman buku
+- Menambah peminjaman buku,
   Hasil: Data peminjaman tersimpan dan stok buku berkurang.
-- Meminjam lebih dari satu buku
+- Meminjam lebih dari satu buku,
   Hasil: Semua buku tercatat pada detail peminjaman.
-- Stok buku habis (0)
+- Stok buku habis (0),
   Hasil: Buku tidak bisa dipilih untuk dipinjam.
-- Cek status keterlambatan
+- Cek status keterlambatan,
   Hasil: Status berubah menjadi overdue jika lewat tanggal kembali.
-- Validasi input kosong
+- Validasi input kosong,
   Hasil: Data tidak bisa disimpan jika form belum lengkap.
