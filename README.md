@@ -13,8 +13,7 @@ Project ini merupakan web berbasis Laravel yang digunakan untuk mengelola data b
 
 Struktur folder utama disusun berdasarkan tanggung jawab tiap komponen aplikasi.
 
-app/Models
-
+app/Models, 
 Berisi representasi tabel database dan relasi antar tabel.
 
 Model yang digunakan:
@@ -29,8 +28,7 @@ Relasi utama:
 - Peminjaman memiliki banyak DetailPeminjaman
 - DetailPeminjaman berelasi dengan Buku
 
-app/Http/Controllers
-
+app/Http/Controllers, 
 Berisi logic aplikasi dan penghubung antara model dan view.
 
 Controller yang digunakan:
@@ -39,8 +37,7 @@ Controller yang digunakan:
 - PeminjamanController untuk mengelola transaksi peminjaman
 - LoginController untuk autentikasi user
 
-resources/views
-
+resources/views, 
 Berisi tampilan antarmuka menggunakan Blade Template.
 
 File utama:
