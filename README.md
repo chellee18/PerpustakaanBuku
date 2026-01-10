@@ -3,11 +3,11 @@
 Project ini merupakan aplikasi web berbasis Laravel yang digunakan untuk mengelola data buku, data member, serta transaksi peminjaman buku pada perpustakaan. Sistem dikembangkan menggunakan arsitektur MVC (Model–View–Controller) dan database MySQL.
 
 **Tech Stack**
-Bahasa pemrograman: PHP
-Framework: Laravel
-Database: MySQL (phpMyAdmin / XAMPP)
-Frontend: Blade Template, HTML, CSS
-Arsitektur: MVC (Model View Controller)
+- Bahasa pemrograman: PHP
+- Framework: Laravel
+- Database: MySQL (phpMyAdmin / XAMPP)
+- Frontend: Blade Template, HTML, CSS
+- Arsitektur: MVC (Model View Controller)
 
 **Struktur Project (Garis Besar)**
 Struktur folder utama disusun berdasarkan tanggung jawab tiap komponen aplikasi.
