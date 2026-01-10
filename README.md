@@ -36,6 +36,7 @@ Controller yang digunakan:
 - MemberController untuk mengelola data member
 - PeminjamanController untuk mengelola transaksi peminjaman
 - LoginController untuk autentikasi user
+- KatalogController untuk search buku
 
 resources/views, 
 Berisi tampilan antarmuka menggunakan Blade Template.
@@ -49,8 +50,7 @@ File utama:
 
 Tampilan menggunakan conditional rendering berdasarkan variabel mode, misalnya mode list dan mode create.
 
-routes/web.php
-
+routes/web.php,
 Berisi routing aplikasi yang menghubungkan URL ke controller.
 
 Contoh route:
