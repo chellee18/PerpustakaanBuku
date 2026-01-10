@@ -1,6 +1,6 @@
 # Web Peminjaman Buku Perpustakaan (Laravel)
 
-Project ini merupakan aplikasi web berbasis Laravel yang digunakan untuk mengelola data buku, data member, serta transaksi peminjaman buku pada perpustakaan. Sistem dikembangkan menggunakan arsitektur MVC (Model–View–Controller) dan database MySQL.
+Project ini merupakan web berbasis Laravel yang digunakan untuk mengelola data buku, data member, serta transaksi peminjaman buku pada perpustakaan. Sistem dikembangkan menggunakan arsitektur MVC (Model–View–Controller) dan database MySQL.
 
 **Tech Stack**
 - Bahasa pemrograman: PHP
@@ -64,19 +64,19 @@ Struktur Database dan Relasi
 
 Tabel yang digunakan dalam sistem:
 - Buku
-Atribut: id, judul, penulis, stok
+(Atribut: id, judul, penulis, stok)
 
 - Member
-Atribut: id, nama, alamat, no_hp
+(Atribut: id, nama, alamat, no_hp)
 
 - Peminjaman
-Atribut: id, member_id, tanggal_pinjam, tanggal_kembali
+(Atribut: id, member_id, tanggal_pinjam, tanggal_kembali)
 
 - DetailPeminjaman
-Atribut: id, peminjaman_id, buku_id
+(Atribut: id, peminjaman_id, buku_id)
 
 - Users
-Atribut: id, name, username, password, role
+(Atribut: id, name, username, password, role)
 
 Relasi:
 - Satu member dapat memiliki banyak transaksi peminjaman
