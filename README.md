@@ -58,6 +58,7 @@ Contoh route:
 /member/create
 /peminjaman
 /peminjaman/create
+/katalog
 
 Struktur Database dan Relasi
 
@@ -73,6 +74,9 @@ Atribut: id, member_id, tanggal_pinjam, tanggal_kembali
 
 - DetailPeminjaman
 Atribut: id, peminjaman_id, buku_id
+
+- Users
+Atribut: id, name, username, password, role
 
 Relasi:
 - Satu member dapat memiliki banyak transaksi peminjaman
@@ -125,7 +129,12 @@ Contoh:
 class BukuController extends Controller
 
 - Polymorphism (Method Overriding)
-Beberapa controller memiliki method dengan nama yang sama seperti index(), create(), dan store(), namun dengan implementasi yang berbeda sesuai dengan kebutuhan masing-masing fitur. Hal ini merupakan contoh polymorphism melalui overriding method.
+Konsep polymorphism diterapkan pada pengelolaan stok buku dengan menggunakan pendekatan Strategy Pattern melalui beberapa class service, yaitu:
+  - StokStrategy.php (sebagai parent / interface)
+  - StokAda.php (implementasi ketika stok masih tersedia)
+  - StokHabis.php (implementasi ketika stok sudah habis)
+Class StokStrategy mendefinisikan method umum yang harus dimiliki oleh semua strategi stok, misalnya method untuk menentukan status atau tindakan terhadap stok buku.
+Kemudian method tersebut dioverride (diimplementasikan ulang) pada class StokAda dan StokHabis dengan perilaku yang berbeda sesuai kondisi stok.
 
 - Overloading
 PHP tidak mendukung method overloading berdasarkan perbedaan parameter, sehingga konsep overloading tidak digunakan dalam project ini.
