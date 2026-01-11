@@ -197,5 +197,5 @@ PHP tidak mendukung method overloading berdasarkan perbedaan parameter, sehingga
   Hasil: Status peminjaman berubah menjadi Sudah Dikembalikan dan stok buku bertambah kembali.
 
 **ERD**:
-<img width="1085" height="577" alt="image" src="https://github.com/user-attachments/assets/9a1d589f-257e-43e4-955c-d866ef08e24e" />
+<img width="985" height="477" alt="image" src="https://github.com/user-attachments/assets/9a1d589f-257e-43e4-955c-d866ef08e24e" />
 
