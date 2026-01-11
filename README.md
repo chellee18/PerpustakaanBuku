@@ -119,6 +119,7 @@ Folder vendor tidak disertakan dalam repository GitHub karena ukuran file yang b
 - Peminjaman lebih dari satu buku dalam satu transaksi
 - Perhitungan otomatis tanggal kembali
 - Penampilan status peminjaman berdasarkan tanggal
+- Katalog buku untuk anggota
 
 **Alur**
 1. Alur Penggunaan Aplikasi
