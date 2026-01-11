@@ -145,8 +145,6 @@ Folder vendor tidak disertakan dalam repository GitHub karena ukuran file yang b
 - Sistem mengecek stok buku: Jika stok masih tersedia, buku dapat dipilih & Jika stok sudah habis, buku tidak dapat dipilih.
 - Petugas menekan tombol Simpan.
 
-Selain itu, petugas dapat mengembalikan buku melalui tombol Kembalikan pada halaman Data Peminjaman. Setelah dikonfirmasi, sistem akan mengubah status menjadi Sudah Dikembalikan dan menambahkan kembali stok buku.
-
 Setelah data disimpan, sistem akan:
 
 - Menyimpan data ke tabel peminjaman.
@@ -157,6 +155,8 @@ Setelah data disimpan, sistem akan:
 Pada halaman Data Peminjaman:
 - Status peminjaman akan ditampilkan sebagai:
   Sedang Dipinjam & Overdue (jika lewat dari tanggal kembali)
+
+Selain itu, petugas dapat mengembalikan buku melalui tombol Kembalikan pada halaman Data Peminjaman. Setelah dikonfirmasi, sistem akan mengubah status menjadi Sudah Dikembalikan dan menambahkan kembali stok buku.
 
 **Penerapan Konsep OOP**
 - Inheritance,
