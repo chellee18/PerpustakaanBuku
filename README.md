@@ -187,3 +187,5 @@ PHP tidak mendukung method overloading berdasarkan perbedaan parameter, sehingga
   Hasil: Status berubah menjadi overdue jika lewat tanggal kembali.
 - Validasi input kosong,
   Hasil: Data tidak bisa disimpan jika form belum lengkap.
+- Login petugas dengan username atau password salah
+  Hasil: Sistem menolak akses login, menampilkan pesan kesalahan, dan pengguna tidak dapat masuk ke halaman sistem.
