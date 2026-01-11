@@ -195,3 +195,7 @@ PHP tidak mendukung method overloading berdasarkan perbedaan parameter, sehingga
   Hasil: Sistem menolak akses login, menampilkan pesan kesalahan, dan pengguna tidak dapat masuk ke halaman sistem.
 - Mengembalikan buku,
   Hasil: Status peminjaman berubah menjadi Sudah Dikembalikan dan stok buku bertambah kembali.
+
+**ERD**:
+<img width="1085" height="577" alt="image" src="https://github.com/user-attachments/assets/9a1d589f-257e-43e4-955c-d866ef08e24e" />
+
