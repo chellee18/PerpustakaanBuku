@@ -21,7 +21,7 @@ Model yang digunakan:
 - Member
 - Peminjaman
 - DetailPeminjaman
-- User (default Laravel)
+- User
 
 Relasi utama:
 - Member memiliki banyak Peminjaman
@@ -75,7 +75,7 @@ Tabel yang digunakan dalam sistem:
 - DetailPeminjaman
 (Atribut: id, peminjaman_id, buku_id)
 - Users
-(Atribut: id, name, username, password, role)
+(Atribut: id, name, username, password)
 
 Relasi:
 - Satu member dapat memiliki banyak transaksi peminjaman
@@ -120,6 +120,7 @@ Folder vendor tidak disertakan dalam repository GitHub karena ukuran file yang b
 - Perhitungan otomatis tanggal kembali
 - Penampilan status peminjaman berdasarkan tanggal
 - Katalog buku untuk anggota
+- Login untuk petugas
 
 **Alur**
 1. Alur Penggunaan Aplikasi
