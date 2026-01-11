@@ -71,7 +71,7 @@ Tabel yang digunakan dalam sistem:
 - Member
 (Atribut: id, nama, alamat, no_hp)
 - Peminjaman
-(Atribut: id, member_id, tanggal_pinjam, tanggal_kembali)
+(Atribut: id, member_id, tanggal_pinjam, tanggal_kembali, status)
 - DetailPeminjaman
 (Atribut: id, peminjaman_id, buku_id)
 - Users
@@ -121,6 +121,7 @@ Folder vendor tidak disertakan dalam repository GitHub karena ukuran file yang b
 - Penampilan status peminjaman berdasarkan tanggal
 - Katalog buku untuk anggota
 - Login untuk petugas
+- Pengembalian buku oleh petugas
 
 **Alur**
 1. Alur Penggunaan Aplikasi
@@ -143,6 +144,8 @@ Folder vendor tidak disertakan dalam repository GitHub karena ukuran file yang b
 - Petugas memilih satu atau lebih buku yang akan dipinjam.
 - Sistem mengecek stok buku: Jika stok masih tersedia, buku dapat dipilih & Jika stok sudah habis, buku tidak dapat dipilih.
 - Petugas menekan tombol Simpan.
+
+Selain itu, petugas dapat mengembalikan buku melalui tombol Kembalikan pada halaman Data Peminjaman. Setelah dikonfirmasi, sistem akan mengubah status menjadi Sudah Dikembalikan dan menambahkan kembali stok buku.
 
 Setelah data disimpan, sistem akan:
 
@@ -190,3 +193,5 @@ PHP tidak mendukung method overloading berdasarkan perbedaan parameter, sehingga
   Hasil: Data tidak bisa disimpan jika form belum lengkap.
 - Login petugas dengan username atau password salah
   Hasil: Sistem menolak akses login, menampilkan pesan kesalahan, dan pengguna tidak dapat masuk ke halaman sistem.
+- Mengembalikan buku,
+  Hasil: Status peminjaman berubah menjadi Sudah Dikembalikan dan stok buku bertambah kembali.
